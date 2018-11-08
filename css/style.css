@@ -1,84 +1,78 @@
 
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-.container {
-  position: relative;
-}
 
 body {
   background-color: #dadada;
-  display: inline-grid;
   font-size: 10px;
-  font-style: Verdana;
 }
 
-
+.container {
+  margin: 10px;
+  width: 100%;
+}
 
 h1 {
   font-family: sans-serif;
   font-size: 14px;
-  text-align: center;
+  margin: 30px 0;
+  letter-spacing: .2em;
+  text-align:center;
+  text-transform: uppercase;
 }
 
+.preview h1  {
+  font-family: sans-serif;
+  font-size: 2.4em;
+  padding: 10%;
+  text-align: left;
+}
 
-.container {
-  margin: 10px;
-  padding: 20px;
+.preview {
+  height:300px;
+  margin: 2em 0;
   width: 100%;
+  background-size: cover;
+  background-position: left;
 }
 
+.baku {
+  background-image: url(../images/baku.jpg);
+}
 
+.london {
+  background-image: url(../images/london.png);
+
+}
+
+.madrid {
+  background-image: url(../images/madrid.jpg);
+}
+
+.rome {
+  background-image: url(../images/rome.jpg);
+}
+
+@media screen and (min-width:575px) {
+  .container {
+    width: 80%;
+  }
+
+  .preview {
+    float: left;
+    margin: 1%;
+    width: 48%;
+    height: 200px;
+  }
 
 
 /**Screen is large than 991px**/
-@media (min-width: 991px) {
-  .preview, .img {
-    margin: 3%;
-    padding: 10px;
-    width: 25%;
-  }
-
-
-  body {
-    background-color: #dadada;
-  }
-  h1 {
-    font-size: 1em;
-  }
+@media screen and (min-width: 991px)
+  .container {
+    width: 20%;
 }
-
-/***Larger than 575px***/
-@media screen and (min-width:575px) {
-  .preview, .img {
-    margin: 1%;
-    padding: 10px;
-    width: 48%;
+    .preview {
+      float: left;
+      margin: 1%;
+      width: 23%;
+      height: 200px;
+    }
   }
-
-
-  body {
-    background-color: #dadada;
-    font-size: 1em;
-    font-style: Verdana;
-  }
-
-  h1 {
-    font-size: 1em;
-    font-style: Verdana;
-    margin: 0;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .preview {
-    padding: 1%;
-    float: left;
-    width: 48%;
-  }
-
-  h1 {
-    font-size: 2em;
-    columns: 4;
-  }
-}
