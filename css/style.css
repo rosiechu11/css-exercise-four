@@ -63,11 +63,11 @@ body {
     width: 48%;
     height: 200px;
   }
-}
+
 
 
 /**Screen is large than 991px**/
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 991px) 
   .container {
     width: 20%;
 }
